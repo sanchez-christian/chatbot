@@ -19,28 +19,30 @@
       <input type="submit">
     </form>
 -->
-<div class="container">
-  <img src="{{ url_for('static', filename='chatbot.jpg')}}" alt="Avatar">
-  <p>Hello. How are you today?</p>
-  <span class="time-right">11:00</span>
-</div>
+<div class = "action" action = /text>
+    <div class="container">
+      <img src="{{ url_for('static', filename='chatbot.jpg')}}" alt="Avatar"> <!-- https://www.istockphoto.com/illustrations/chatbot -->
+      <p>{{bot_response}}</p>
+      <span class="time-right">11:00</span>
+    </div>
 
-<div class="container darker">
-  <img src="{{ url_for('static', filename='user.png')}}" class="right">
-  <p>Hey! I'm fine. Thanks for asking!</p>
-  <span class="time-left">11:01</span>
-</div>
+    <div class="container darker">
+      <img src="{{ url_for('static', filename='user.png')}}" class="right"> <!-- https://www.kindpng.com/imgv/ioJmRwb_windows-10-person-icon-png-download-person-icon/ -->
+      <p>{{user_input}}</p>
+      <span class="time-left">11:01</span>
+    </div>
 
-<div class="container">
-  <img src="{{ url_for('static', filename='chatbot.jpg')}}">
-  <p>Sweet! So, what do you wanna do today?</p>
-  <span class="time-right">11:02</span>
-</div>
+    <div class="container">
+      <img src="{{ url_for('static', filename='chatbot.jpg')}}">
+      <p>Sweet! So, what do you wanna do today?</p>
+      <span class="time-right">11:02</span>
+    </div>
 
-<div class="container darker">
-  <img src="{{ url_for('static', filename='user.png')}}" alt="Avatar" class="right">
-  <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
-  <span class="time-left">11:05</span>
+    <div class="container darker">
+      <img src="{{ url_for('static', filename='user.png')}}" alt="Avatar" class="right">
+      <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+      <span class="time-left">11:05</span>
+    </div>
 </div>
   </body>
 </html>
