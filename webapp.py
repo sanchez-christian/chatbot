@@ -1,6 +1,7 @@
 from flask import Flask, url_for, render_template, request
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
+from chatterbot.trainers import ChatterBot CorpusTrainer
 bot = ChatBot(
     'cbot',
     storage_adapter='chatterbot.storage.SQLStorageAdapter',
@@ -10,6 +11,8 @@ bot = ChatBot(
     ],
     database_uri='sqlite:///database.sqlite3'
 )
+
+trainer.train("chatterbot.corpus.english")
 
 print("Type something to begin...")
 
@@ -32,11 +35,11 @@ trainer.train([
 #        break
 while True:
     try:
-        user_input = input()
+        user_input = input('You: ')
 
         bot_response = bot.get_response(user_input)
 
-        print(bot_response)
+        print('Bot Name: ', bot_response)
 
     # Press ctrl-c or ctrl-d on the keyboard to exit
     except (KeyboardInterrupt, EOFError, SystemExit):
