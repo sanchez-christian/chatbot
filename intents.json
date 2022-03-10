@@ -3,6 +3,29 @@
         "patterns": ["Hi", "Hello", "Hey", "What's up"],
         "responses":["Hello! Would you like to order?", "Hey! Would you like to order?", "Hi! Would you like to order?"],
         "context_set": ""
+    },
+    {"tag": "goodbye",
+        "patterns": ["bye", "goodbye", "cya", "see you soon"],
+        "response": ["Goodbye!", "Have a good one!", "Enjoy the rest of your day!", "See you in a bit!"],
+        "context_set": ""
+
+    },
+    {"tag": "yes",
+        "patterns": ["yes", "yeah", "yes please", "yup", "sure", "of course", "definitely", "yea"],
+        "response": ["Great! Would you like to see the menu before you place your order?", "Here is the menu! Whenever you are ready, select the menu number of your choice!"],
+        "context_set": ""
+
+    },
+    {"tag": "no",
+        "patterns": ["no", "nah", "no thanks", "nope", "surely not", "of course not", "definitely not", "I don't think so"],
+        "response": ["Okay, goodbye!", "Okay, whenever you are ready, select the menu number of your choice!"],
+        "context_set": ""
+
+    },
+    {
+        "patterns": ["1", "2", "3", "4", "5"]
+        "response": "Your order has been placed! See you soon!",
+        "context_set": ""
     }
 ]
 

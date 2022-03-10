@@ -1,7 +1,7 @@
 from flask import Flask, url_for, render_template, request
-from chatterbot import ChatBot
-from chatterbot.trainers import ListTrainer
-from chatterbot.trainers import ChatterBot CorpusTrainer
+#from chatterbot import ChatBot
+#from chatterbot.trainers import ListTrainer
+#from chatterbot.trainers import ChatterBot CorpusTrainer
 bot = ChatBot(
     'cbot',
     storage_adapter='chatterbot.storage.SQLStorageAdapter',
