@@ -22,7 +22,7 @@
         "context_set": ""
 
     },
-    {
+    {"tag": "order number",
         "patterns": ["1", "2", "3", "4", "5"],
         "response": "Your order has been placed! See you soon!",
         "context_set": ""
