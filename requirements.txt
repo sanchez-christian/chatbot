@@ -5,3 +5,11 @@ MarkupSafe
 Werkzeug
 wheel
 gunicorn
+nltk
+LancasterStemmer
+numpy
+tflearn
+tensorflow
+random
+json
+pickle
