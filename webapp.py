@@ -74,7 +74,7 @@ net = tflearn.fully_connected(net, 8) #This is a hidden layer.
 net = tflearn.fully_connected(net, len(output[0]), activation="softmax")
 net = tflearn.regression(net)
 
-model = tflearn.DNN(net)
+model = tflearn.models.dnn.DNN
 
 try:
     model.load("model.tflearn")
